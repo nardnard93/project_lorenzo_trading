@@ -40,6 +40,7 @@ class AdminPanelProvider extends PanelProvider
             ->widgets([
                 AccountWidget::class,
                 FilamentInfoWidget::class,
+                \App\Filament\Widgets\DashboardOverview::class,
             ])
             ->middleware([
                 EncryptCookies::class,
