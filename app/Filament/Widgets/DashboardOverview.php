@@ -4,6 +4,9 @@ namespace App\Filament\Widgets;
 
 use Filament\Widgets\StatsOverviewWidget;
 use Filament\Widgets\StatsOverviewWidget\Stat;
+use App\Models\Order;
+use App\Models\Product;
+use App\Models\Inventory;
 
 class DashboardOverview extends StatsOverviewWidget
 {

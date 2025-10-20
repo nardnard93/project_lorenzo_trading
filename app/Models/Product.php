@@ -21,4 +21,10 @@ class Product extends Model
     {
         return $this->hasMany(OrderItem::class);
     }
+
+    // Convert image blob to Base64 for display
+    public function getImageUrlAttribute()
+    {
+        return $this->image ? 'data:image/jpeg;base64,' . base64_encode($this->image) : null;
+    }
 }
